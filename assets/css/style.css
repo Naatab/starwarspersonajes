@@ -1,0 +1,138 @@
+#titulo {
+    padding: 1rem;
+    text-align: center;
+}
+
+#principales,
+#secundarios,
+#significativos {
+    display: grid;
+    justify-content: end;
+    grid-template-rows: 30% 30% 30%;
+}
+
+.numeros {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#seccionPrincipales,
+#seccionSecundarios,
+#seccionSignificativos {
+    width: 600px;
+    height: 200px;
+}
+
+.lineaSecciones {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.lineaSecciones,
+.lineaGris,
+#principales,
+#personajesPrincipales,
+#secundarios,
+#personajesSecundarios,
+#significativos,
+#personajesSignificativos {
+    width: 69px;
+    height: 250px;
+    float: left;
+    padding: 15px;
+    background: #fff;
+}
+
+.lineaSecciones 
+.lineaGris 
+#principales,
+#secundarios,
+#significativos {
+    border-right: 3px solid #e0dfdf;
+    position: relative;
+
+}
+
+.lineaSecciones .lineaGris #principales::after,
+#secundarios::after,
+#significativos::after {
+    content: '';
+    position: absolute;
+    bottom: 150px;
+    right: -7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 6px solid #ffd050;
+}
+
+#receptorPrincipales,
+#receptorSecundarios,
+#receptorSignificativos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.cuerpoCardEstaSeccion,
+.cuerpoCardPrincipales,
+.cuerpoCardSecundarios,
+.cuerpoCardSignificativos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.cardEstaSeccion {
+    display: flex;
+    gap: 2rem;
+    width: 20rem;
+    height: 9rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cardPersonaje {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 22.5rem;
+    height: 6rem;
+}
+
+.shadowRed {
+    box-shadow: 4px 4px rgb(252, 203, 203);
+}
+
+.shadowGreen {
+    box-shadow: 4px 4px rgb(187, 248, 174);
+}
+
+.shadowBlue {
+    box-shadow: 4px 4px rgb(207, 245, 247);
+}
+
+.circuloRojo,
+.circuloVerde,
+.circuloCeleste {
+    opacity: 50%;
+    border-radius: 50%;
+    margin: 0.5rem 1rem 3rem 1rem;
+    padding: 1rem;
+}
+
+.circuloRojo {
+    background: red;
+}
+
+.circuloVerde {
+    background: rgb(19, 222, 19);
+}
+
+.circuloCeleste {
+    background: rgb(12, 199, 246);
+}
